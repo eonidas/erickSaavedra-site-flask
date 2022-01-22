@@ -1,128 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% block head %}
-    {% include "head.html" %}
-  {% endblock %}
+{% block head %}
+  {% include "head.html" %}
+{% endblock %}
+
 <body>
-  <header>
+  {% block header %}
+    {% include "header.html" %}
+  {% endblock %}
 
-    {% block navbar %}
-      {% include "nav-bar.html" %}
-    {% endblock %}
+  <main class="blogs-main">
+    <section class="blogs-posts-container">
+      <div class="grid-container">
+        <h3></h3>
 
-      <section class="header-icons-container">
-        <div class="icons">
-          <a href="https://www.linkedin.com/in/erick-saavedra-8a62a2201/">
-            <span class="flaticon-010-linkedin"></span>
-          </a>
-          <a href= "https://github.com/Conseicka"><img class="github-ico" src="css/font/github.svg" alt=""></img></a>
-        </div>
-      </section>
+        {% for c in cert %}
+          <article class="post-container">
+            <a href={{ c.cert.img }}>
+              <img class="img-hover" src={{ c.cert.compress }} alt={{ c.cert.alt }}>
+            </a>
+            <p>
+              <a class="post-container-link" href={{ c.cert.link }}>{{ c.cert.title }}</a>
+            </p>
+          </article>
+        {% endfor %}
 
-  </header>
-    <main class="blogs-main">
-
-        <section class="blogs-posts-container">
-            <div class="grid-container">
-              <h3></h3>
-
-              <article class="post-container">
-                    <a href="assets/img/certifications/basic_python.png">
-                      <img class="img-hover" src="assets/img/compress/certifications/basic_python.png" alt="">
-                    </a>
-                    <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra/">Basic Python Course</a></p>
-                </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/inter_python.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/inter_python.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra/"> Intermediate Python Course</a></p>
-                </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/prof_python.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/prof_python.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra/">Professional Python Course</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/css.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/css.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">CSS Course</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/data.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/data.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">Data Science Bussiness</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/devops.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/devops.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">DevOps Course</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/git.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/git.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">Git and GitHub Course</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/pensamiento_python.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/pensamiento_python.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">Computational Thinking with Python</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/poo.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/poo.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">Oriented Object Programming</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/poo_python.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/poo_python.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">POO with Python</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/shell.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/shell.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">Basic Shell Programming</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/terminal.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/terminal.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://platzi.com/p/erick_saavedra">Command Line Basics</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/svx.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/svx.png" alt="">
-                </a>
-                  <p><a class="post-container-link" href="https://www.linkedin.com/in/yami-almaguer-gil/">Customer Service vs Customer Experience</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/gtxp.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/gtxp.png" alt="">
-                </a>
-                <p><a class="post-container-link" href="https://app.openbadges.me/view/#!/badge?badgeid=38424c03-5fff-46d1-893f-d63668447705">Managing Project Based Work</a></p>
-              </article>
-              <article class="post-container">
-                <a href="assets/img/certifications/labview.png">
-                  <img class="img-hover" src="assets/img/compress/certifications/labview.png" alt="">
-                </a>
-                <p><a class="post-container-link" href="https://education.ni.com/badges/resources/1254">LabVIEW CLAD</a></p>
-              </article>
-
-            </div>
-        </section>
-
-    </main>
-    <footer>
-        <p>Developed by Erick Saavedra.</p>
-    </footer>
+      </div>
+    </section>
+  </main>
+  {% block footer %}
+    {% include "footer.html" %}
+  {% endblock %}
 </body>
 </html>
