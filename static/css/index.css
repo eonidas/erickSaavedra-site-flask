@@ -33,13 +33,6 @@ body {
   right: 0;
 }
 
-.grid-container {
-    max-width: 980px;
-    margin: auto;
-}
-
-
-
 .home-main {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
