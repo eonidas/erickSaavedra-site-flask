@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% block head %}
+      {% include "head.html" %}
+    {% endblock %}
+
+<body>
+
+    {% block header %}
+       {% include "header.html" %}
+    {% endblock %}
+
+    <main class="profile-grid-container">
+        <section class="profile-main-container">
+            <div class="grid-container profile-container">
+                <div class="pic-container">
+                    <img src="{{ url_for('static', filename='img/compress/yo.png') }}" alt="">
+                </div>
+                <div class="me-container">
+                    <h2>Hi!, I'm Erick Saavedra! {</h2>
+                      <p class="identation"> An Electrical and Automation Engineer who loves to develop software , technology geek, musician, drawer and athlete.
+                    <h2>}<h2></p>
+                </div>
+                <div class="pie-container">
+                    {% block pie %}
+                        {% include "pie.html" %}
+                    {% endblock %}
+                </div>
+
+            </div>
+        </section>
+        <section class="profile-main-proyects">
+            <div class="grid-container">
+                <h3>Projects</h3>
+                <div class="proyects-main-container">
+                    <article class="proyect-container">
+                        <h4>This Web Site!</h4>
+                        <p>This web site was developed using HTML, CSS and JavaScript.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Vision</h4>
+                        <p>Developing a low cost vision system for detection of missing components on UUT through python.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Software Migration</h4>
+                        <p>Migration of our testing software from LabVIEW to python, this includes a wide testing platforms. We selected Django due to it is open source.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Vibration Analisis</h4>
+                        <p>An application based on LabVIEW for vibration analysis for rotating machinery.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Thesis</h4>
+                        <p>"Lead Acid Battery Backup Time Estimation Using LabVIEW for Traction Systems in Electric Vehicles”. This model was capable to estimate State of Charge, Backup Time and Autonomy of the vehicle. It also included the mathematical modeling of a vehicle.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Monophase Inverter</h4>
+                        <p>Design and implementation of a monophase inverter using LabVIEW as control interface.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Power DC-DC Converter</h4>
+                        <p>Design and implementation of a power electronics system for electrical Vehicles using LabVIEW as control interface.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Git Repository Handler</h4>
+                        <p>Developed a shell script capable to handle conflict issues on local repositories in order to complete the update request.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Software Auto Installer</h4>
+                        <p>An application capable to install a varios packages of several softwares in order to automate a repetitive task through shell scripting.</p>
+                    </article>
+                    <article class="proyect-container">
+                        <h4>Assembly</h4>
+                        <p>Various scripts with the capability of: control temperature, control three-pashe inverters, serial communication and digital multiplex systems.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <section class="profile-main-hobbies">
+          <div class="grid-container">
+            <h3>Hobbies</h3>
+            <div class="hobbies-main-container">
+              <article class="hobbie-container">
+                  <h4>Music</h4>
+                  <p><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FZackseneger%2Fvideos%2F2881229561919246%2F&show_text=false&width=261&t=0" width="261" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></p>
+              </article>
+              <article class="hobbie-container">
+                  <h4>Athleticism</h4>
+                  <p><a href="assets/img/2th.jpg">
+                        <img class="img-hobbie" src="assets/img/2th.jpg" alt="">
+                     </a>
+                  </p>
+              </article>
+              <article class="hobbie-container">
+                  <h4>Drawing</h4>
+                  <p><a href="assets/img/drawing_1.png">
+                        <img class="img-hobbie" src="assets/img/compress/drawing_1.png" alt="">
+                     </a>
+                  </p>
+              </article>
+              <article class="hobbie-container">
+                  <h4>Drawing</h4>
+                  <p><a href="assets/img/drawing_2.png">
+                        <img class="img-hobbie" src="assets/img/compress/drawing_2.png" alt="">
+                     </a>
+                  </p>
+              </article>
+
+            </div>
+          </div>
+        </section>
+    </main>
+    {% block footer %}
+        {% include "footer.html" %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto+Slab:400,700|Roboto:400,500,700,900&display=swap');
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+
+
+header {
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 400px ;
+    background: linear-gradient(300deg,darkviolet,#120974,#740909);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+    border-bottom: 1px solid white;
+}
+
+header .header-icons-container {
+
+    width: 100%;
+    height: 50px;
+    display: grid;
+
+}
+header .header-icons-container .icons {
+
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-around;
+    justify-self: end;
+    margin-right: 50px;
+
+}
+
+header .icons span {
+    color: white;
+}
+
+header .icons span:hover {
+  fill: #4a94d0;
+}
+
+.github-ico{
+  height: 40px;
+  width: 40px;
+  fill: white;
+  margin-left: 15px
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+header .header-nav-container {
+  width: 100%;
+  height: 50px;
+  display: grid;
+
+}
+.header-nav-container a{
+  color: white;
+  border-bottom: 1px solid white;
+}
+.header-nav-container a:hover{
+  color: #4a94d0;
+  border-bottom: 1px solid #4a94d0;
+  opacity: .9;
+}
+
+.profile-link{
+  display: flex;
+  justify-content:center;
+}
+.certifications-link{
+  display: flex;
+  justify-content:center;
+}
+.timeline-link{
+  display: flex;
+  justify-content:center;
+}
+.welcome-link{
+  display: flex;
+  justify-content:center;
+}
