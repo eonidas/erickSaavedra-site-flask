@@ -10,19 +10,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    user_ip = request.remote_addr
-
     response = make_response(redirect('/index'))
-    response.set_cookie('user_ip', user_ip)
 
     return response
 
 
 @app.route('/index')
 def hello():
-    user_ip = request.cookies.get('user_ip')
 
-    return render_template('index.html', user_ip=user_ip)
+    return render_template('index.html', tab_title="Welcom! |")
 
 
 @app.route('/about-me')
@@ -59,7 +55,7 @@ def about_me():
             "compress": "static/img/compress/drawing_2.png",
         }, },
     ]
-    return render_template('about-me.html', projects=projects, hobbies=hobbies)
+    return render_template('about-me.html', projects=projects, hobbies=hobbies, tab_title="About me |")
 
 
 @app.route('/certifications')
@@ -186,10 +182,11 @@ def certifications():
             },
         },
     ]
-    return render_template('certifications.html', cert=cert)
+    
+    return render_template('certifications.html', cert=cert, tab_title="Certifications |")
 
 
 @app.route('/timeline')
 def timeline():
 
-    return render_template('timeline.html')
+    return render_template('timeline.html', tab_title="Timeline |")
