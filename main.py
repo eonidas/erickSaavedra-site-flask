@@ -8,6 +8,11 @@ from flask import render_template
 app = Flask(__name__)
 
 
+@app.errorhandler(404)
+def not_found(error):
+    return render_template("404.html", error=error)
+
+
 @app.route('/')
 def index():
     response = make_response(redirect('/index'))
