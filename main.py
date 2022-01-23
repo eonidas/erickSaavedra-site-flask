@@ -195,3 +195,6 @@ def certifications():
 def timeline():
 
     return render_template('timeline.html', tab_title="Timeline |")
+
+if __name__ == "__main__":
+    app.run()
