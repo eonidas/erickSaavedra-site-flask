@@ -9,18 +9,18 @@
   {% include "header.html" %}
   {% endblock %}
 
-  <main class="blogs-main">
-    <section class="blogs-posts-container">
-      <div class="grid-container">
+  <main class="cert-main">
+    <section class="cert-container">
+      <div class="cert-grid-container">
         <h3></h3>
 
         {% for c in cert %}
-          <article class="post-container">
+          <article class="single-cert-container">
             <a href={{ c.cert.img }}>
               <img class="img-hover" src={{ c.cert.compress }} alt={{ c.cert.alt }}>
             </a>
             <p>
-              <a class="post-container-link" href={{ c.cert.link }}>{{ c.cert.title }}</a>
+              <a class="cert-link" href={{ c.cert.link }}>{{ c.cert.title }}</a>
             </p>
           </article>
         {% endfor %}

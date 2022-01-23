@@ -21,13 +21,10 @@ body {
 h4 {
   color: #90b8f3;
 }
-
-
 .grid-container {
-    justify-content: space-between;
-    margin: auto;
+  justify-content: space-between;
+  margin: auto;
 }
-
 .profile-main-container {
   padding: 70px 40px;
   height: 400px;
@@ -36,16 +33,15 @@ h4 {
   align-items: center;
 }
 .profile-main-container img {
-    width: 320px;
-    margin-right: 30px;
+  width: 320px;
+  margin-right: 30px;
 }
 .profile-main-container {
-    display: flex;
+  display: flex;
 }
 .profile-container{
   display: grid;
   grid-template-columns: 350px 1fr 600px;
-
 }
 .pic-container{
   grid: 1;
@@ -57,23 +53,21 @@ h4 {
   grid: 3;
   align-content: center;
 }
-
 .profile-main-proyects,  .profile-main-hobbies{
-    padding: 0 50px 40px;
+  padding: 0 50px 40px;
 }
 .profile-main-proyects, .profile-main-hobbies h3 {
-    /*border-bottom: 1px solid #cdd2da;*/
-    padding-bottom: 35px;
-    text-align: center;
+  /*border-bottom: 1px solid #cdd2da;*/
+  padding-bottom: 35px;
+  text-align: center;
 }
-
 .proyects-main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .proyect-container {
-    padding: 0 20px;
-    text-align: justify;
+  padding: 0 20px;
+  text-align: justify;
 }
 .identation{
   padding:20px;
@@ -90,5 +84,4 @@ h4 {
 .hobbie-container{
   padding: 0 20px;
   text-align: justify;
-
 }
