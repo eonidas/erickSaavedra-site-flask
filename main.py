@@ -29,7 +29,7 @@ def hello():
 @app.route('/about-me')
 def about_me():
     projects = {
-        "This Web Site": "This web site was developed using HTML, CSS and JavaScript.",
+        "This Web Site": "This web site was developed using Flask.",
         "Vision": "Developing a low cost vision system for detection of missing components on UUT through python.",
         "Software Migration": "Migration of our testing software from LabVIEW to python, this includes a wide testing platforms. We selected Django due to it is open source.",
         "Vibration Analisis": "An application based on LabVIEW for vibration analysis for rotating machinery.",
