@@ -36,7 +36,7 @@ cert = [
     {
         "cert": {
             "title": "Basic Python Course",
-            "img": "static/img/certifications/basic_python.png",
+            "img": "static/img/certifications/basic_python.PNG",
             "compress": "static/img/compress/certifications/basic_python.png",
             "alt": "Basic Python Course Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -44,7 +44,7 @@ cert = [
     }, {
         "cert": {
             "title": "Intermediate Python Course",
-            "img": "static/img/certifications/inter_python.png",
+            "img": "static/img/certifications/inter_python.PNG",
             "compress": "static/img/compress/certifications/inter_python.png",
             "alt": "Intermediate Python Course Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -52,7 +52,7 @@ cert = [
     }, {
         "cert": {
             "title": "Professional Python Course",
-            "img": "static/img/certifications/prof_python.png",
+            "img": "static/img/certifications/prof_python.PNG",
             "compress": "static/img/compress/certifications/prof_python.png",
             "alt": "Professional Python Course Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -60,7 +60,7 @@ cert = [
     },{
         "cert": {
             "title": "CSS Course",
-            "img": "static/img/certifications/css.png",
+            "img": "static/img/certifications/css.PNG",
             "compress": "static/img/compress/certifications/css.png",
             "alt": "CSS Course Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -68,7 +68,7 @@ cert = [
     },{
         "cert": {
             "title": "Data Science Bussiness",
-            "img": "static/img/certifications/data.png",
+            "img": "static/img/certifications/data.PNG",
             "compress": "static/img/compress/certifications/data.png",
             "alt": "Data Science Bussiness Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -76,7 +76,7 @@ cert = [
     },{
         "cert": {
             "title": "DevOps Course",
-            "img": "static/img/certifications/devops.png",
+            "img": "static/img/certifications/devops.PNG",
             "compress": "static/img/compress/certifications/devops.png",
             "alt": "DevOps Course Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -84,7 +84,7 @@ cert = [
     },{
         "cert": {
             "title": "Git and GitHub Course",
-            "img": "static/img/certifications/git.png",
+            "img": "static/img/certifications/git.PNG",
             "compress": "static/img/compress/certifications/git.png",
             "alt": "Git and GitHub Course Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -92,7 +92,7 @@ cert = [
     },{
         "cert": {
             "title": "Computational Thinking with Python",
-            "img": "static/img/certifications/pensamiento_python.png",
+            "img": "static/img/certifications/pensamiento_python.PNG",
             "compress": "static/img/compress/certifications/pensamiento_python.png",
             "alt": "Computational Thinking with Python Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -100,7 +100,7 @@ cert = [
     },{
         "cert": {
             "title": "Oriented Object Programming",
-            "img": "static/img/certifications/poo.png",
+            "img": "static/img/certifications/poo.PNG",
             "compress": "static/img/compress/certifications/poo.png",
             "alt": "Oriented Object Programming Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -108,7 +108,7 @@ cert = [
     },{
         "cert": {
             "title": "POO with Python",
-            "img": "static/img/certifications/poo_python.png",
+            "img": "static/img/certifications/poo_python.PNG",
             "compress": "static/img/compress/certifications/poo_python.png",
             "alt": "POO with Python Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -116,7 +116,7 @@ cert = [
     },{
         "cert": {
             "title": "Basic Shell Programming",
-            "img": "static/img/certifications/shell.png",
+            "img": "static/img/certifications/shell.PNG",
             "compress": "static/img/compress/certifications/shell.png",
             "alt": "Basic Shell Programming Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -124,7 +124,7 @@ cert = [
     },{
         "cert": {
             "title": "Command Line Basics",
-            "img": "static/img/certifications/terminal.png",
+            "img": "static/img/certifications/terminal.PNG",
             "compress": "static/img/compress/certifications/terminal.png",
             "alt": "Command Line Basics Certification",
             "link":"https://platzi.com/p/Conseicka/",
@@ -140,14 +140,14 @@ cert = [
     },{
         "cert": {
             "title": "Managing Project Based Work",
-            "img": "static/img/certifications/gtxp.png",
+            "img": "static/img/certifications/gtxp.PNG",
             "compress": "static/img/compress/certifications/gtxp.png",
             "alt": "Managing Project Based Work Certification",
         },
     },{
         "cert": {
             "title": "LabVIEW CLAD",
-            "img": "static/img/certifications/labview.png",
+            "img": "static/img/certifications/labview.PNG",
             "compress": "static/img/compress/certifications/labview.png",
             "alt": "LabVIEW CLAD Certification",
             "link":"",
