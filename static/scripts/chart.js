@@ -48,15 +48,29 @@
           "color": colorSet.getIndex(10),
           "task": "Yazaki: Validation Engineer"
         }, {
+          "category": "Job",
+          "start": "2023-04-17",
+          "end": today,
+          "color": colorSet.getIndex(10),
+          "task": "ENG Soluciones: Odoo Developer"
+        }, 
+        {
           "category": "Courses",
           "start": "2015-06-01",
           "end": "2015-12-01",
           "color": colorSet.getIndex(15),
           "task": "LabVIEW CLAD Certification"
+        },
+        {
+          "category": "Courses",
+          "start": "2023-04-17",
+          "end": "2024-02-01",
+          "color": colorSet.getIndex(15),
+          "task": "Oddo Technical Training"
         }, {
           "category": "Courses",
           "start": "2020-07-01",
-          "end": today,
+          "end": "2022-08-10",
           "color": colorSet.getIndex(15),
           "task": "Platzi: Programming Softwares"
         }, {

@@ -1,5 +1,6 @@
 projects = {
     "This Web Site": "This web site was developed using Flask.",
+    "Odoo Developer": "SQL request via Python ORM library, develop backend and frontend Odoo application for business needs ( including developing custom applications ) such as: customer relationship management(CRM),billing, accounting,sales, purchases, warehouse, payment approvals, sales commissions, budget, etc.",
     "Vision": "Developing a low cost vision system for detection of missing components on UUT through python.",
     "Software Migration": "Migration of our testing software from LabVIEW to python, this includes a wide testing platforms. We selected Django due to it is open source.",
     "Vibration Analisis": "An application based on LabVIEW for vibration analysis for rotating machinery.",
